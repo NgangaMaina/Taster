@@ -3,30 +3,7 @@
 A complete ML project predicting wine quality (Low / Medium / High) from physicochemical
 lab measurements, using the UCI Wine Quality dataset (red + white *Vinho Verde*, combined).
 
-## Contents
 
-```
-wine_quality_prediction.ipynb   Full analysis notebook: EDA → baselines → ensemble → evaluation
-app.py                          Streamlit app for interactive live predictions
-requirements.txt                Python dependencies
-data/
-  winequality-red.csv            Raw UCI red wine data (1599 samples)
-  winequality-white.csv          Raw UCI white wine data (4898 samples)
-models/                          Artifacts produced by the notebook (Section 13), used by app.py
-  wine_quality_ensemble.joblib    Final soft-voting ensemble (RF + GB + XGBoost)
-  wine_quality_rf.joblib          Tuned Random Forest (used for SHAP explanations)
-  label_encoder.joblib            Encodes Low/Medium/High <-> 0/1/2
-  feature_cols.joblib             Exact feature order the models expect
-  metrics.json                    Saved evaluation metrics shown in the app
-  feature_stats.json              Per-feature descriptive stats
-```
-
-## Setup
-
-```bash
-python -m venv venv
-source venv/bin/activate            # Windows: venv\Scripts\activate
-pip install -r requirements.txt
 ```
 
 ## Run the notebook
