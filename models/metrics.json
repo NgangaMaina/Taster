@@ -1,0 +1,45 @@
+{
+  "accuracy": 0.6419172932330827,
+  "macro_f1": 0.6213283099675833,
+  "macro_precision": 0.6432935344951308,
+  "macro_recall": 0.6097280224487874,
+  "macro_roc_auc": 0.8062319489267263,
+  "cv_mean_accuracy": 0.6246240601503759,
+  "cv_std_accuracy": 0.0050647344305667285,
+  "confusion_matrix": [
+    [
+      92,
+      12,
+      98
+    ],
+    [
+      6,
+      279,
+      112
+    ],
+    [
+      49,
+      104,
+      312
+    ]
+  ],
+  "classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "feature_importance": {
+    "alcohol": 0.15659423057300553,
+    "density": 0.10819354061867913,
+    "volatile acidity": 0.10174561039975089,
+    "total sulfur dioxide": 0.08671555963043595,
+    "chlorides": 0.08538685447402848,
+    "free sulfur dioxide": 0.08528676343389353,
+    "sulphates": 0.08397758348735071,
+    "residual sugar": 0.07527285561091988,
+    "citric acid": 0.07469994958019185,
+    "pH": 0.0740052589100148,
+    "fixed acidity": 0.06457272363500455,
+    "wine_type": 0.0035490696467247334
+  }
+}
